@@ -5,6 +5,13 @@ import 'firebase/firestore';
 
 const firebaseConfig = {
   // your config
+   apiKey: "AIzaSyCwCj2BmyeWtsvkh18HuOQ-WUqaDF4X0qQ",
+  authDomain: "videocallapp-584b3.firebaseapp.com",
+  projectId: "videocallapp-584b3",
+  storageBucket: "videocallapp-584b3.firebasestorage.app",
+  messagingSenderId: "962649604768",
+  appId: "1:962649604768:web:da9b09342656c3b511bfc5",
+  measurementId: "G-HP3JNPS75P"
 };
 
 if (!firebase.apps.length) {
@@ -15,7 +22,7 @@ const firestore = firebase.firestore();
 const servers = {
   iceServers: [
     {
-      urls: ['stun:stun1.l.google.com:19302', 'stun:stun2.l.google.com:19302'],
+      urls: ['stun:stun.l.google.com:19302', 'stun:stun.l.google.com:19302'],
     },
   ],
   iceCandidatePoolSize: 10,
